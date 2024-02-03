@@ -1,0 +1,34 @@
+import java.util.Scanner;
+import java.util.Arrays;
+class composite {
+	public static void main(String[] args){
+		Scanner scanner=new Scanner(System.in);
+		int[] arr = {16, 18, 27, 16, 23, 21, 19};
+		int numcomposite=countcompositenumbers(arr);
+		System.out.println("no.of composite numbers are:"+numcomposite);
+	}
+	public static int countcompositenumbers(int[] arr){
+		int c=0;
+		for(int num:arr){
+			if(num>1)
+			{
+				boolean isprime = true;
+				for(int i=2;i*i<=num;i++)
+				{
+					if(num%i==0)
+					{
+						isprime=false;
+						c++;
+						break;
+					}
+				}
+
+				if(isprime)
+					{
+					c++;
+					}
+			}
+		}
+		return c;
+	}
+}
