@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class bank{
+	public static void main(String[] args){
+		
+	Scanner scanner = new Scanner(System.in);
+	System.out.print("enter the bank:");
+	System.out.print("1. sbi   2.icici   3. AXIS \n ");
+	int c=scanner.nextInt();
+	double rateofinterest=0;
+	if(c==1){
+		 rateofinterest=8.4;
+		System.out.print("rate of inerest SBI- 8.4 \n");
+	}
+	if(c==2){
+		rateofinterest=7.3;
+		System.out.print("rate of inerest ICICI - 7.3 \n");
+	}
+	if(c==3){
+		rateofinterest=9.0;
+		System.out.print("rate of inerest Axis - 9.0 \n");
+	}
+      else
+		{
+		System.out.print(" ");
+		}
+	}
+}
+
+
