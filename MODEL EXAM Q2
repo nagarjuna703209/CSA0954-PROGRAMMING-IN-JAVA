@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class sum{
+	public static void main(String[] args){
+		
+	Scanner scanner = new Scanner(System.in);
+	System.out.print("enter the size:");
+	int n=scanner.nextInt();
+	int[] numbers=new int[n];
+	int sum=0;
+	try{
+	System.out.print("enter the elements:");
+	for(int i=0;i<n;i++){
+		numbers[i]=scanner.nextInt();
+		sum +=numbers[i];
+	}
+		System.out.println("the sum is:"+sum);
+	}
+	finally{
+		System.out.print("");
+	}
+
+  }
+}
+
+
+
